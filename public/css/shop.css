@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+
+@font-face {
+    font-family: "Helvetica-Neue";
+    src: url("../storage/font/HelveticaNeue-Thin.otf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding-bottom: 15px;
+}
+
+.bg-dark.scrolled {
+    background-color: #252525 !important;
+    transition: background-color 200ms linear;
+}
+
+.navbar-brand {
+    font-family: "Helvetica", "sans-serif";
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+.navbar-nav {
+    margin-right: 3em;
+}
+
+.nav-item {
+    margin-right: 2em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+.underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #ff4f77;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.underline:hover:before,
+.underline:focus:before,
+.underline:active:before {
+    left: 0;
+    right: 0;
+}
+
+.dropdown-menu {
+    left: -60px;
+}
+
+.dropdown {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.category {
+    margin-top: 150px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#category-label {
+    text-align: center;
+}
+
+.list-group {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.item-list {
+    margin-top: 100px;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.list-product {
+    font-family: "Helvetica-Neue";
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-name > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product-price {
+    font-family: "Helvetica-Neue";
+}
+
+hr {
+    margin: 0;
+    border: 1px solid #ff4f77;
+    background: #ff4f77;
+}
+
+p {
+    margin: 0;
+}
+
+.btn {
+    background: #ff4f77;
+    color: white;
+}
+
+.list-group-item.active a{
+    color: #fff;
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+
+body {
+    background-image: url("../storage/images/7.jpeg");
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-wrapper {
+    background: #ffffff;
+    max-width: 300px;
+    padding: 20px 45px 30px 45px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    width: 50%;
+    margin-bottom: 35px;
+    background-color: #ff4f77;
+    height: 2px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ff4f77;
+}
+
+.login-form input {
+    outline: 0;
+    background: transparent;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.5) !important;
+    width: 100%;
+    border: 0;
+    margin: 0 0 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.login-form button {
+    text-transform: uppercase;
+    outline: 0;
+    display: block;
+    margin: 0 auto;
+    background: #ff4f77;
+    width: 80%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-top: 10px;
+}

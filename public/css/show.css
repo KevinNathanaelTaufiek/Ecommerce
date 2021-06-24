@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+
+@font-face {
+  font-family: "Helvetica-Neue";
+  src: url("../storage/font/HelveticaNeue-Thin.otf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding-bottom: 15px;
+}
+
+.bg-dark.scrolled {
+  background-color: #252525 !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-brand {
+  font-family: "Helvetica", "sans-serif";
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 15px;
+}
+
+.navbar-nav {
+  margin-right: 3em;
+}
+
+.nav-item {
+  margin-right: 2em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.underline {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.underline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #ff4f77;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underline:hover:before,
+.underline:focus:before,
+.underline:active:before {
+  left: 0;
+  right: 0;
+}
+
+.dropdown-menu {
+  left: -60px;
+}
+
+.dropdown {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  height: 50vh;
+  display: flex;
+  align-items: center !important;
+}
+
+hr {
+  margin: 0;
+  border: 1px solid #ff4f77;
+  background: #ff4f77;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 100px;
+}
+
+.desc {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+
+#description {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.kartu {
+  margin-top: 30px;
+  border: 0.5px solid grey;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+.footer-distributed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #343a40;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font: normal 16px;
+  padding: 45px 50px;
+  margin-top: 57px;
+}
+
+.footer-distributed .footer-left p {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+  color: white;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: white;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+  .more {
+    width: 30% !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .more {
+      width: 40% !important;
+    }
+    .navbar-collapse {
+      background: #434242;
+    }
+    .nav-item {
+      margin-left: 20px;
+    }
+    .button {
+      background-color: inherit;
+      text-align: left;
+    }
+  }
+}
